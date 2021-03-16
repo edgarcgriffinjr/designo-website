@@ -1,0 +1,39 @@
+///////////////////
+//// Typography ///
+///////////////////
+
+@use 'variables' as *;
+
+// import font face
+@import url('https://fonts.googleapis.com/css2?family=Jost:@200..900');
+
+
+// h1 text sizes
+h1, .h1 {
+    font-size: $font-xl;
+    line-height: $line-md;
+    font-weight: $weight-md;
+}
+
+// h2 text sizes
+h2, .h2 {
+    font-size: $font-lg;
+    line-height: $line-md;
+    letter-spacing: $space-md;
+    font-weight: $weight-md;
+}
+
+// h3 text sizes
+h3, .h3 {
+    font-size: $font-md;
+    line-height: $space-sm;
+    font-weight: $weight-md;
+}
+
+// normal text sizes
+p, a, span {
+    font-size: $font-sm;
+    line-height: $space-sm;
+    font-weight: $weight-reg;
+    text-decoration: none;
+}

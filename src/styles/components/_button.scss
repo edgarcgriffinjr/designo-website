@@ -1,0 +1,32 @@
+@use '../base/variables' as *;
+
+.button-light {
+    color: $black;
+    background-color: $white;
+    border: none;
+    font-size: $font-sm;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    letter-spacing: $space-sm;
+    &:hover {
+        background-color: $light-peach;
+        color: $white;
+        cursor: pointer;
+    }
+}
+
+.button-dark {
+    color: $white;
+    background-color: $peach;
+    border: none;
+    font-size: $font-sm;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    letter-spacing: $space-sm;
+    &:hover {
+        background-color: $light-peach;
+        cursor: pointer;
+    }
+}

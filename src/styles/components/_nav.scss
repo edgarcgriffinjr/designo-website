@@ -1,0 +1,88 @@
+@use '../base/variables' as *;
+
+.header {
+    
+    @media (max-width: 900px) {
+        width: 100%;
+        height: 6rem;
+    }
+    @media (min-width: 900px) {
+        width: 80%;
+        height: 9.625rem;
+    }
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 1rem;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.header-links {
+    list-style: none;
+    margin-right: 1rem;
+    @media (max-width: 600px) {
+        display: none;
+    }
+    display: flex;
+    gap: 2rem;
+    a {
+        color: $black;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.header-burger {
+    @media (min-width: 600px) {
+        display: none;
+    }
+    @media (max-width: 600px) {  
+        height: 1.5rem;
+        width: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: .375rem;
+        margin-right: 1rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.bars {
+    width: 100%;
+    height: .125rem;
+    background-color: $black;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.active {
+    position: fixed;
+    top: 6rem;
+    height: 14.75rem;
+    padding: 0 0 0 2rem;
+    width: 100vw;
+    gap: 2rem;
+    list-style: none;
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    a {
+        font-size: 1.5rem;
+        color: $white;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,123 @@
+@use '../base/variables' as *;
+
+.interior {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 4;
+    gap: 10rem;
+    justify-items: center;
+}
+
+.hero {
+    @media (min-width: 900px) {
+        width: 80%;
+    }
+    @media (max-width: 900px) and (min-width: 600px) {
+        width: 95%;
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.hero-container {
+    background-color: $peach;
+
+    @media (min-width: 600px) {
+        border-radius: .5rem;
+    }
+
+    background-image: url('../../assets/home/desktop/bg-pattern-hero-home.svg');
+
+    @media (min-width: 900px) {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 40rem;
+        width: 100%;    
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
+    }
+    @media (max-width: 900px) {
+        display: grid;
+        height: 52.5625rem;
+        grid-template-rows: 26.3125rem;
+        background-size: 75%;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: center;
+    }
+    @media (max-width: 600px) {
+        background-size: 100%;
+        background-position-x: 3rem;
+    }
+    
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        
+        color: $white;
+        @media (min-width: 900px) {
+           width: 85%;         
+           max-width: 50rem;
+           padding-bottom: 2rem;
+        }
+        @media (max-width: 900px) {
+            width: 70%; 
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+        @media (max-width: 600px) {
+            margin-top: 2rem;
+            font-size: $font-lg;
+            width: 95%;
+        }
+
+    }
+    p {
+        padding-bottom: 3rem;
+        line-height: 2rem;
+        color: $white;
+        @media (min-width: 900px) {
+            width: 85%;         
+            max-width: 50rem;
+            padding-bottom: 2rem;
+        }
+         @media (max-width: 900px) {
+            width: 75%; 
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+        @media (max-width: 600px) {
+            width: 95%;
+        }
+    }
+}
+
+.hero-right {
+    @media (max-width: 1400px) and (min-width: 900px) { margin-left: -10rem; }
+    @media (max-width: 900px) {
+        display: flex;
+        justify-content: center;
+        margin-top: -7rem;    
+    }
+    @media (max-width: 600px) {
+        margin-top: 1rem;
+        img {
+            width: 100%;
+        }
+    }
+    @media (max-width: 400px) {
+        margin-top: 6rem;
+        img {
+            width: 100%;
+        }
+    }
+    
+}

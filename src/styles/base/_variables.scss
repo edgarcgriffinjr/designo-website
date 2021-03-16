@@ -1,0 +1,39 @@
+///////////////////
+//// Variables ////
+///////////////////
+
+// font stack
+$Jost: 'Jost', serif;
+
+// device sizes
+$breakpoints: (
+  'small': (min-width: 400px),
+  'medium': (min-width: 800px),
+  'large': (min-width: 1440px),
+);
+
+// colors 
+$peach: #E7816B;
+$light-peach: #FFAD9B;
+$black: #1D1C1E;
+$dark-grey: #333136;
+$light-grey: #F1F3F5;
+$white: #FFFFFF;
+
+// font sizes
+$font-sm: 1rem; // 16px
+$font-md: 1.25rem; // 20px
+$font-lg: 2.5rem; // 40px
+$font-xl: 3rem; // 48px
+
+// line heights
+$line-sm: 1.625rem; // 26px
+$line-md: 3rem; // 48px
+
+// font weights
+$weight-reg: 300;
+$weight-md: 500;
+
+// letter spacing
+$space-sm: .125rem; // 2px
+$space-md: .375rem; // 6px
