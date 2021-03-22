@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Design = () => {
     return (
-        <section className='card-grid'>
-            <div className='bottom-container'>
+        <section className='design'>
+            <div className='design-container'>
                 <div className='large-card web'>
                     <h2> Web Design </h2>
                     <Link to = '/web'> View projects </Link>
