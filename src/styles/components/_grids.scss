@@ -1,0 +1,103 @@
+@use '../../styles/base/variables' as *;
+.interior {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 4;
+    gap: 10rem;
+    justify-items: center;
+}
+
+.content-grid {
+    width: 90%;
+    max-width: 70rem;
+    display: grid;
+    @media (min-width: 900px) { grid-template-columns: repeat(3, 1fr); }
+    grid-gap: 2rem;
+    .content-card {
+        border-radius: 1rem;
+        display: flex;
+        @media (min-width: 900px) {flex-direction: column; }
+        @media (max-width: 900px) and (min-width: 600px) { height: 20rem;}
+        @media (max-width: 600px) {flex-direction: column; }
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        img {
+            @media (min-width: 900px) {
+                border-top-left-radius: .5rem;
+                border-top-right-radius: .5rem;
+                height: 100%;
+                width: 100%;
+            }
+            @media (max-width: 900px) and (min-width: 600px) {
+                border-top-left-radius: .5rem;
+                border-bottom-left-radius: .5rem;
+                height: 100%;
+                width: 100%;
+            }
+            @media (max-width: 600px) {
+                border-top-left-radius: .5rem;
+                border-top-right-radius: .5rem;
+                height: auto;
+                width: 100%;
+            }
+            margin: 0;
+            padding: 0;
+        }
+        h3 {
+            letter-spacing: .5rem;
+            text-transform: uppercase;
+            color: $peach;
+            font-weight: $weight-md;
+        }
+
+
+    }        
+    .content {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        background-color: $peach-bg;
+        align-items: center;
+        @media (min-width: 900px) {
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+        }
+        @media (max-width: 900px) and (min-width: 600px) {
+            border-top-right-radius: .5rem;
+            border-bottom-right-radius: .5rem;            
+            height: 20rem;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+            width: 100%;
+        }
+        p {
+            width: 90%;
+        }
+        &:hover {
+            background-color: $peach;
+            color: $white;
+            h3 {
+                color: $white;
+            }
+            cursor: pointer;
+        }
+    }
+}
+
+.design-grid {
+    width: 90%;
+    max-width: 70rem;
+    
+    display: grid;
+    @media (min-width: 900px) { 
+        grid-template-columns: repeat(2, 1fr); 
+        height: 20rem;
+    }
+    grid-gap: 1rem;
+}

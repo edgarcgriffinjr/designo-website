@@ -18,7 +18,6 @@ h1, .h1 {
 // h2 text sizes
 h2, .h2 {
     font-size: $font-lg;
-    line-height: $line-md;
     letter-spacing: $space-md;
     font-weight: $weight-md;
 }
@@ -26,14 +25,12 @@ h2, .h2 {
 // h3 text sizes
 h3, .h3 {
     font-size: $font-md;
-    line-height: $space-sm;
     font-weight: $weight-md;
 }
 
 // normal text sizes
 p, a, span {
     font-size: $font-sm;
-    line-height: $space-sm;
     font-weight: $weight-reg;
     text-decoration: none;
 }

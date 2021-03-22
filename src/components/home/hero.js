@@ -3,7 +3,7 @@ import React from 'react'
 import phone from '../../assets/home/desktop/image-hero-phone.png'
 
 const Hero = () => {
-    return ( 
+    return (
         <section className='hero'>
             <div className="hero-container">
                 <div className='hero-left'>
@@ -20,14 +20,11 @@ const Hero = () => {
                     </button>
                 </div>
                 <div className='hero-right'>
-                    <img src={phone} alt="phone"/>
+                    <img src={phone} alt="phone" />
                 </div>
             </div>
-            
-            
-            
         </section>
-     );
+    );
 }
- 
+
 export default Hero;

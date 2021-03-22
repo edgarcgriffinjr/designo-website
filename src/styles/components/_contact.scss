@@ -1,0 +1,46 @@
+@use '../../styles/base/variables' as *;
+.contact {
+    max-width: 70rem;
+    width: 90%;
+    @media (min-width: 600px) { margin-bottom: -5rem; }
+    @media (max-width: 600px) { margin-bottom: -40%; }
+    z-index: 100;
+}
+
+.contact-container {
+    width: 100%;
+    background-color: $peach;
+    background-image: url('../../assets/shared/desktop/bg-pattern-three-circles.svg');
+    background-size: 25% 50%;
+    background-repeat: repeat-y;
+    background-position-x: right;
+    border-radius: .5rem;
+    @media (min-width: 900px) {
+        padding: 6rem 5.5rem;
+        display: flex;
+        justify-content: space-between; 
+    }
+    @media (max-width: 900px) {
+        padding: 6rem 5.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+
+    }
+    .content-left {
+        @media (max-width: 900px) { display: flex; flex-direction: column; align-items: center; text-align: center; }
+    }
+    h2 {
+        color: $white;
+        max-width: 20rem;
+        padding-bottom: 1rem;
+        letter-spacing: 0;
+        font-weight: $weight-md;
+    }
+    p {
+        color: $white;
+        max-width: 26.875rem;
+        line-height: 1.5rem;
+    }
+}

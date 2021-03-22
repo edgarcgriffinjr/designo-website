@@ -1,20 +1,9 @@
 @use '../base/variables' as *;
 
-.interior {
-    width: 100%;
-    display: grid;
-    grid-template-rows: 4;
-    gap: 10rem;
-    justify-items: center;
-}
-
+// hero section
 .hero {
-    @media (min-width: 900px) {
-        width: 80%;
-    }
-    @media (max-width: 900px) and (min-width: 600px) {
-        width: 95%;
-    }
+    max-width: 70rem;
+    width: 90%;
     @media (max-width: 600px) {
         width: 100%;
     }
@@ -101,6 +90,7 @@
 }
 
 .hero-right {
+    overflow: hidden;
     @media (max-width: 1400px) and (min-width: 900px) { margin-left: -10rem; }
     @media (max-width: 900px) {
         display: flex;
@@ -120,4 +110,119 @@
         }
     }
     
+}
+
+// design and description sections
+.design, .desc {
+    max-width: 70rem;
+    width: 90%;
+}
+
+.design-container {
+    height: 40rem;
+    display: grid;
+    @media (min-width: 900px) {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+    }
+    @media (max-width: 900px) {
+        grid-template-rows: repeat(3, 12.5rem);
+    }
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.25rem;
+}
+
+.app {
+    @media (min-width: 900px) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    @media (max-width: 900px) {
+        grid-row: 2;
+        background-size: 100% auto;
+    }
+    background-image: url('../../assets/home/desktop/image-app-design.jpg');
+}
+
+.graphic {
+    @media (min-width: 900px) {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    @media (max-width: 900px) {
+        grid-row: 3;
+        background-size: 100% auto;
+    }
+    background-image: url('../../assets/home/desktop/image-graphic-design.jpg');
+
+}
+
+.web {
+    @media (max-width: 900px) {
+        grid-row: 1;
+        grid-row-start: span 1;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    @media (min-width: 900px) { background-image: url('../../assets/home/desktop/image-web-design-large.jpg'); }
+    @media (max-width: 900px) { background-image: url('../../assets/home/desktop/image-web-design-small.jpg'); }
+}
+
+.desc-container {
+    @media (min-width: 900px) {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 2.5rem;
+    }
+    @media (max-width: 900px) {
+        display: grid;
+        grid-template-row: repeat(3, auto);
+        gap: 2.5rem;
+    }
+}
+
+.desc-box { 
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (max-width: 900px) and (min-width: 600px) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    svg {
+        @media (min-width: 900px) { margin-bottom: 3rem; }
+        @media (max-width: 900px) and (min-width: 600px) { margin-right: 4rem; }
+        @media (max-width: 600px) { margin-bottom: 3rem; }
+        background: linear-gradient(45deg, rgba($light-peach, .3), $white);
+        border-radius: 50%;
+        overflow: visible;
+    }
+    h3 {
+        @media (min-width: 900px) { text-align: center; }
+        @media (max-width: 900px) and (min-width: 600px) { text-align: start; }
+        @media (max-width: 600px) { text-align: center; }
+        font-weight: $weight-md;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    p {
+        @media (min-width: 900px) { text-align: center; }
+        @media (max-width: 900px) and (min-width: 600px){ text-align: start; }
+        @media (max-width: 600px) { text-align: center; }
+        font-weight: $weight-reg;
+        line-height: 1.5rem;
+        @media (min-width: 900px) { max-width: 20rem; }
+    }
 }
