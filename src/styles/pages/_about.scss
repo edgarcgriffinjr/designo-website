@@ -1,0 +1,239 @@
+@use '../base/variables' as *;
+.hero-card {
+    max-width: 70rem;
+    @media (min-width: 600px) { 
+        width: 90%;
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+    display: grid;
+    @media (min-width: 900px) { 
+        grid-template-columns: 5fr 3fr; 
+        height: 30rem;
+    }
+    @media (max-width: 900px) { 
+        grid-template-rows: 1fr 1fr; 
+        height: 40rem;
+    }
+    border-radius: .5rem;
+    
+}
+
+.info-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    color: $white;
+    background-color: $peach;
+    @media (min-width: 600px) { padding: 0rem 5rem; }
+    @media (min-width:900px) { 
+        border-bottom-left-radius: .5rem; 
+        border-top-left-radius: .5rem;
+        align-items: flex-start;
+    }
+    @media (max-width: 900px) {
+        align-items: center;
+        p {
+            text-align: center;
+        }
+        @media (min-width: 600px) {
+            border-bottom-left-radius: .5rem; 
+            border-bottom-right-radius: .5rem;
+        }
+    }
+    @media (max-width: 600px) {
+        gap: 1rem;
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            max-width: 80%;
+        }
+    }
+}
+
+.image-right {
+    background-size: 100% 100%;
+    @media (min-width: 900px) { 
+        background-image: url('../../assets/about/desktop/image-about-hero.jpg');
+        border-bottom-right-radius: .5rem; 
+        border-top-right-radius: .5rem;
+    }
+    @media (max-width: 900px) and (min-width: 600px) { 
+        background-image: url('../../assets/about/tablet/image-about-hero.jpg');
+        border-top-right-radius: .5rem; 
+        border-top-left-radius: .5rem;
+    }
+    @media (max-width: 600px) { 
+        background-image: url('../../assets/about/mobile/image-about-hero.jpg');
+    }
+    
+    @media (max-width: 900px) { grid-row: 1; }
+
+}
+
+.talent-card {
+    max-width: 70rem;
+    @media (min-width: 600px) { 
+        width: 90%;
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+        margin-top: -10rem;
+        grid-template-rows: 1fr 1.25fr; 
+        height: 45rem;
+    }
+    display: grid;
+    @media (min-width: 900px) { 
+        grid-template-columns: 3fr 5fr; 
+        height: 30rem;
+    }
+    @media (max-width: 900px) and (min-width: 600px) { 
+        grid-template-rows: 1fr 1fr; 
+        height: 40rem;
+    }
+
+}
+
+.talent-image {
+    background-size: 100% 100%;
+    @media (min-width: 900px) { 
+        background-image: url('../../assets/about/desktop/image-world-class-talent.jpg');
+        border-bottom-left-radius: .5rem; 
+        border-top-left-radius: .5rem;
+    }
+    @media (max-width: 900px) and (min-width: 600px) { 
+        background-image: url('../../assets/about/tablet/image-world-class-talent.jpg');
+        border-top-right-radius: .5rem; 
+        border-top-left-radius: .5rem;
+    }
+    @media (max-width: 600px) { 
+        background-image: url('../../assets/about/mobile/image-world-class-talent.jpg');
+    }
+}
+
+.talent-card-text {
+    background-color: $peach-bg;
+    h2 {
+        color: $peach;
+        text-align: left;
+        letter-spacing: .125rem;
+    }
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    @media (min-width: 900px) { 
+        align-items: flex-start; 
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+
+    }
+    @media (max-width: 900px) {
+        align-items: center; 
+        p {
+            text-align: center;
+        }
+    }
+    justify-content: center;
+    @media (min-width: 600px) { 
+        padding: 0rem 5rem; 
+    }
+    @media (max-width: 600px) {         
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            max-width: 80%;
+        }
+    }
+    @media (max-width: 900px) and (min-width:600px) { 
+        border-bottom-right-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+
+    }
+}
+
+.deal-card {
+    max-width: 70rem;
+    @media (min-width: 600px) { 
+        width: 90%;
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+        grid-template-rows: 1fr 1.25fr; 
+        height: 45rem;
+    }
+    display: grid;
+    @media (min-width: 900px) { 
+        grid-template-columns: 5fr 3fr; 
+        height: 30rem;
+    }
+    @media (max-width: 900px) and (min-width: 600px) { 
+        grid-template-rows: 1fr 1fr; 
+        height: 40rem;
+    }
+
+}
+
+.deal-card-text {
+    background-color: $peach-bg;
+    h2 {
+        color: $peach;
+        text-align: left;
+        letter-spacing: .125rem;
+    }
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    @media (min-width: 900px) { 
+        align-items: flex-start; 
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+
+    }
+    @media (max-width: 900px) {
+        align-items: center; 
+        p {
+            text-align: center;
+        }
+    }
+    justify-content: center;
+    @media (min-width: 600px) { 
+        padding: 0rem 5rem; 
+    }
+    @media (max-width: 600px) {         
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            max-width: 80%;
+        }
+    }
+    @media (max-width: 900px) and (min-width:600px) { 
+        border-bottom-right-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+
+    }
+}
+
+.deal-image {
+    background-size: 100% 100%;
+    @media (min-width: 900px) { 
+        background-image: url('../../assets/about/desktop/image-real-deal.jpg');
+        border-bottom-right-radius: .5rem; 
+        border-top-right-radius: .5rem;
+    }
+    @media (max-width: 900px) and (min-width: 600px) { 
+        background-image: url('../../assets/about/tablet/image-real-deal.jpg');
+        border-top-right-radius: .5rem; 
+        border-top-left-radius: .5rem;
+        grid-row: 1;
+    }
+    @media (max-width: 600px) { 
+        background-image: url('../../assets/about/mobile/image-real-deal.jpg');
+        grid-row: 1;
+    }
+}
+

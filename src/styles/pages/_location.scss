@@ -1,0 +1,90 @@
+@use '../base/variables' as *;
+
+.location-grid-box {
+    width: 100%;
+    display: grid;
+    @media (min-width: 900px) { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 900px) { grid-template-rows: repeat(2, 1fr); }
+    @media (min-width: 600px) { grid-gap: 2rem; }
+}
+
+.text-box {
+    height: 20.375rem;
+    @media (min-width: 900px) { grid-column-end: span 2; }
+    background-color: $peach-bg;
+    @media (min-width: 600px) { border-radius: .5rem; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: 600px) { padding-left: 15%; }
+    @media (max-width: 600px) { align-items: center; }
+    h2 {
+        text-align: left;
+        color: $peach;
+        @media (max-width:600px) { font-size: 2rem;}
+    }
+}
+
+.location-design {
+    display: flex;
+    @media (max-width: 600px) { flex-direction: column; }
+    gap: 3rem;
+    p:nth-child(1) {
+        font-weight: $weight-md;
+    }
+    @media (max-width: 600px) { text-align: center;}
+}
+
+.img-box-ca {
+    background-size: 100% 100%;
+    @media (min-width: 900px) {
+        background-image: url('../../assets/locations/desktop/image-map-canada.png');
+        border-radius: .5rem; 
+    }
+
+    @media (max-width: 900px) and (min-width: 600px) {
+        background-image: url('../../assets/locations/tablet/image-map-canada.png');
+        grid-row: 1;
+        border-radius: .5rem; 
+    }
+
+    @media (max-width: 600px) {
+        background-image: url('../../assets/locations/desktop/image-map-canada.png');
+        grid-row: 1;
+    }
+}
+
+.img-box-au {
+    background-size: 100% 100%;
+    @media (min-width: 900px) {
+        background-image: url('../../assets/locations/desktop/image-map-australia.png');
+        border-radius: .5rem; 
+    }
+
+    @media (max-width: 900px) and (min-width: 600px) {
+        background-image: url('../../assets/locations/tablet/image-map-australia.png');
+        border-radius: .5rem; 
+        grid-row: 1;
+    }
+    @media (max-width: 600px) {
+        background-image: url('../../assets/locations/desktop/image-map-australia.png');
+        grid-row: 1;
+    }
+}
+
+.img-box-uk {
+    background-size: 100% 100%;  
+    @media (min-width: 900px) {
+        background-image: url('../../assets/locations/desktop/image-map-united-kingdom.png');
+        border-radius: .5rem; 
+    }
+    @media (max-width: 900px) and (min-width: 600px) {
+        background-image: url('../../assets/locations/tablet/image-map-uk.png');
+        grid-row: 1;
+        border-radius: .5rem; 
+    }
+    @media (max-width: 600px) {
+        background-image: url('../../assets/locations/desktop/image-map-united-kingdom.png');
+        grid-row: 1;
+    }
+}

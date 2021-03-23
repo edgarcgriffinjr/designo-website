@@ -1,0 +1,96 @@
+@use '../base/variables' as *;
+.contact-hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-grid {
+    @media (min-width: 600px) {
+    width: 90%;
+    max-width: 70rem;
+    border-radius: .5rem;
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+    
+    display: grid;
+    @media (min-width: 900px) { 
+        grid-template-columns: 2fr 2fr; 
+        height: 30rem; 
+        gap: 2rem;
+    }
+    @media (max-width: 900px) { 
+        grid-template-rows: 1.5fr 2fr; 
+        height: auto;
+    }
+    background-color: $peach;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column; 
+    
+    @media (min-width: 900px) { 
+        margin-left: 15%; 
+        justify-content: center;
+    }
+    @media (max-width: 900px) { 
+        width: 85%; 
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    @media (max-width: 600px) {
+        h1 {
+            font-size: $font-lg;
+        }
+        align-items: center;
+        p {
+            text-align: center;
+        }
+    }
+    color: $white;
+    gap: 1rem;
+    p {
+        line-height: 1.5;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 900px) { 
+        justify-content: center;
+        margin-right: 3rem; 
+    }
+    @media (max-width: 900px) {
+        padding-bottom: 2rem;
+    }
+    align-items: center;
+    gap: 1rem;
+    input, textarea {
+        font-size: $font-sm;
+        text-transform: uppercase;
+        color: $white;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $white;
+        @media (min-width: 900px) {  width: 100%; }
+        @media (max-width: 900px) {  width: 85%; }
+
+
+        padding-left: .5rem;
+        &:focus {
+            outline: none;
+        }
+    }
+    input {
+        padding-bottom: .5rem;
+    }
+}
+
+.contact{
+    padding-bottom: 10rem;
+}

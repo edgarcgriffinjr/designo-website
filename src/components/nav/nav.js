@@ -17,7 +17,7 @@ const Nav = () => {
             <ul className="header-links">
                 <li> <Link to = "/about"> Our Company </Link></li>
                 <li> <Link to = "/locations"> Locations </Link></li>
-                <li> <Link to = "/contacts"> Contacts </Link></li>
+                <li> <Link to = "/contact"> Contacts </Link></li>
             </ul>
 
             <div className="header-burger" onClick = { showMenu }>
@@ -29,7 +29,7 @@ const Nav = () => {
             <ul className = { menu ? 'menu active' : 'menu' }>
                 <li> <Link to = "/about"> Our Company </Link></li>
                 <li> <Link to = "/locations"> Locations </Link></li>
-                <li> <Link to ="/contacts"> Contacts </Link></li>
+                <li> <Link to ="/contact"> Contacts </Link></li>
             </ul>
         </header>
      );

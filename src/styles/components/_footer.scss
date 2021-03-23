@@ -50,7 +50,6 @@
     &-location {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
         color: rgba(255, 255, 255, 50%);
         p:nth-of-type(1) {
             font-weight: $weight-md;
@@ -61,7 +60,6 @@
         &-contact {
             display: flex;
             flex-direction: column;
-            gap: 1.25rem;
             color: rgba(255, 255, 255, 50%);
             p {
                 font-weight: $weight-md;
@@ -145,7 +143,6 @@
             &-location {
                 display: flex;
                 flex-direction: column;
-                gap: 1.25rem;
                 font-weight: $weight-reg;
                 text-align: center;
                 color: rgba(255, 255, 255, 50%);
@@ -159,7 +156,6 @@
                 display: flex;
                 flex-direction: column;
                 text-align: center;
-                gap: 1.25rem;
                 color: rgba(255, 255, 255, 50%);
                 margin-bottom: 2rem;
                 p:nth-of-type(1) {
