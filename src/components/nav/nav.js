@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import logo from '../../assets/shared/desktop/logo-dark.png';
+import { ReactComponent as Hamburger } from '../../assets/shared/mobile/icon-hamburger.svg'
+import { ReactComponent as Close } from '../../assets/shared/mobile/icon-close.svg'
 
 const Nav = () => {
     const [menu, setMenu] = useState(false)
@@ -21,9 +23,7 @@ const Nav = () => {
             </ul>
 
             <div className="header-burger" onClick = { showMenu }>
-                <div className="bars"></div>
-                <div className="bars"></div>
-                <div className="bars"></div>
+                { menu ? <Close /> : <Hamburger /> }   
             </div>
 
             <ul className = { menu ? 'menu active' : 'menu' }>

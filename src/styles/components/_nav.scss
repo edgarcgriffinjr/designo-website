@@ -52,11 +52,6 @@
     }
 }
 
-.bars {
-    width: 100%;
-    height: .125rem;
-    background-color: $black;
-}
 
 .menu {
     display: none;
@@ -68,6 +63,7 @@
     height: 14.75rem;
     padding: 0 0 0 2rem;
     width: 100%;
+    margin-left: -5%;
     gap: 2rem;
     list-style: none;
     background-color: $black;
@@ -75,7 +71,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
     a {
         font-size: 1.5rem;
         color: $white;

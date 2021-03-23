@@ -15,9 +15,7 @@ const Hero = () => {
                         With over 10 years in the industry, we are eexperiend inc reating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.
                     </p>
 
-                    <button className='button-light'>
-                        Learn More
-                    </button>
+                    <a href="/about"><button className='button-light'> Learn More </button></a>
                 </div>
                 <div className='hero-right'>
                     <img src={phone} alt="phone" />

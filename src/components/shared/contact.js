@@ -11,8 +11,10 @@ const Contact = () => {
                         business grow.
                     </p>
                 </div>
-
-                <button className="button-light"> Get in touch</button>
+                <div className='contact-button'>
+                    <a href="/contact"><button className="button-light"> Get in touch</button></a>
+                </div>
+                
             </div>
             
         </section>

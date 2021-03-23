@@ -7,7 +7,7 @@ import LocaButtons from '../components/shared/locationButton'
 const Contact = () => {
     return ( 
         <Layout>
-            <main className="interior contact">
+            <main className="interior contact-page">
                 <Form />
                 <LocaButtons />
             </main>

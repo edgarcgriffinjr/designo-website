@@ -12,8 +12,7 @@ const Form = () => {
                 </div>
 
                 <form className="contact-form">
-                    <input type="text" id="name" required="required" 
-                    dataerror= "This cannot be blank"placeholder="Name" />
+                    <input type="text" id="name" required="required" placeholder="Name" />
                     <input type="email" id="email" required="required" placeholder="Email Address"/>
                     <input type="text" id="number" required="required" placeholder="Phone Number" />
                     <textarea id="message" required="required" placeholder="Your Message" cols="20" rows="5" />
